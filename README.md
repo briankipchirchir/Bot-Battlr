@@ -20,3 +20,4 @@ db.json: Stores the bot data.
 
 author:
 brian kipchirchir
+# bot-battlr
