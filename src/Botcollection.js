@@ -12,7 +12,7 @@ export default function Botcollection() {
   };
 
   function handleDeleteclick(botId) {
-    fetch(`http://localhost:3000/bots/${botId}`, {
+    fetch(`https://backend-tau-eight-31.vercel.app/bots/${botId}`, {
       method: "Delete",
     })
       .then((response) => response.json())
@@ -33,7 +33,7 @@ export default function Botcollection() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/bots");
+        const response = await fetch("https://backend-tau-eight-31.vercel.app/bots");
         const data = await response.json();
         setBots(data);
       } catch (error) {
